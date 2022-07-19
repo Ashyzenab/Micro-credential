@@ -1,0 +1,127 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Unit 5",
+      "provenance": [],
+      "collapsed_sections": [],
+      "authorship_tag": "ABX9TyM8lDbHabs1NgBNMgTD+6zr",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Ashyzenab/Micro-credential/blob/main/Unit_5.ipynb/python\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Name: ___Ashley Z Sangare_______________________\n",
+        "Lesson 5: If-elif-else Statements\n",
+        "\n",
+        "1. Make a list of 5 or more usernames, including an admin account. Imagine you are writing code\n",
+        "that will welcome people to your application on login. Loop through the list and print your\n",
+        "greeting.\n",
+        "a. If the admin account logs in, give them a special greeting. They’re the admin, after all!\n",
+        "b. Other users can get the generic greeting\n",
+        "\n",
+        "2. Store numbers 1-10 in a list\n",
+        "a. Loop through the list\n",
+        "b. Use an if-elif-else chain inside your loop to print the ordinal ending for each number –\n",
+        "for example – 1 st , 2 nd , 3 rd … etc."
+      ],
+      "metadata": {
+        "id": "7pD--8xc0DQt"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "Numbers= list(range(1,11))\n",
+        "for digits in Numbers:\n",
+        "  if digits==1:\n",
+        "    print(str(digits)+'st')\n",
+        "  elif digits==2:\n",
+        "    print(str(digits)+'nd')\n",
+        "  elif digits==3:\n",
+        "    print(str(digits)+'rd')\n",
+        "  else:\n",
+        "    print(str(digits)+'th')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "fT8qcLv_buXe",
+        "outputId": "582d9726-efec-4981-feff-d2d2304bd193"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1st\n",
+            "2nd\n",
+            "3rd\n",
+            "4th\n",
+            "5th\n",
+            "6th\n",
+            "7th\n",
+            "8th\n",
+            "9th\n",
+            "10th\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "users = ['Alison', 'Fadima', 'Cire', 'Witny', 'Zenab']\n",
+        "\n",
+        "for user in users:\n",
+        "    if user == 'admin':\n",
+        "        print('Hello admin, would you like to see a status report?')\n",
+        "    else:\n",
+        "        print('Hello ' + user + ', thank you for loggin in again.')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "RS8Qjld_SAu3",
+        "outputId": "618cdd6d-9e08-4f71-f66c-06b85cd45077"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hello Alison, thank you for loggin in again.\n",
+            "Hello Fadima, thank you for loggin in again.\n",
+            "Hello Cire, thank you for loggin in again.\n",
+            "Hello Witny, thank you for loggin in again.\n",
+            "Hello Zenab, thank you for loggin in again.\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
